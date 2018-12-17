@@ -1,0 +1,27 @@
+{
+  "name": "migrating",
+  "version": "1.0.0",
+  "description": "Common Migrator for Sequelize | Knex | ...",
+  "main": "index.js",
+  "bin": {
+    "migrating": "./index"
+  },
+  "keywords": [
+    "migrator",
+    "migrations",
+    "migrate",
+    "knex",
+    "sequelize",
+    "db",
+    "database"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WaleedAshraf/migrating.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WaleedAshraf/migrating/issues"
+  },
+  "author": "Waleed Ashraf <hy@waleedashraf.me>",
+  "license": "ISC"
+}
