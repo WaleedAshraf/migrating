@@ -1,6 +1,6 @@
 {
   "name": "migrating",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common Migrator for Sequelize | Knex | ...",
   "main": "index.js",
   "bin": {
