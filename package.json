@@ -4,7 +4,7 @@
   "description": "Common Migrator for Sequelize | Knex | ...",
   "main": "index.js",
   "bin": {
-    "migrating": "./index"
+    "migrating": "index.js"
   },
   "keywords": [
     "migrator",
