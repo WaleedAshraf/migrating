@@ -1,10 +1,10 @@
 {
   "name": "migrating",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common Migrator for Sequelize | Knex | ...",
-  "main": "index.js",
+  "main": "migrating.js",
   "bin": {
-    "migrating": "index"
+    "migrating": "migrating"
   },
   "keywords": [
     "migrator",
@@ -23,5 +23,9 @@
     "url": "https://github.com/WaleedAshraf/migrating/issues"
   },
   "author": "Waleed Ashraf <hy@waleedashraf.me>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.16.2",
+    "pg": "^7.7.1"
+  }
 }
