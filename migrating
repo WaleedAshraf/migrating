@@ -19,10 +19,10 @@ runCommand(`npm install ${database}`)
 if (orm === 'sequelize') {
   runCommand(`npm install ${orm}`)
   runCommand(`npm install ${ormPackage}`)
-  if (direction === 'up') runCommand(`node_modules/.bin/sequelize db:migrate --url ${connection}`)
-  else if (direction === 'down') runCommand(`node_modules/.bin/sequelize db:migrate:undo --url ${connection}`)
+  const method = direction === 'down' ? ':undo' : ''
+  runCommand(`node_modules/.bin/sequelize db:migrate${method} --url ${connection}`)
 } else if (orm === 'knex') {
   runCommand(`npm install ${orm}`)
-  if (direction === 'up') runCommand(`node_modules/.bin/knex migrate:latest --client=pg --connection='${connection}' --migrations-directory=./migrations`)
-  else if (direction === 'down') runCommand(`node_modules/.bin/knex migrate:rollback --client=pg --connection='${connection}' --migrations-directory=./migrations`)
+  const method = direction === 'down' ? ':rollback' : ':latest'
+  runCommand(`node_modules/.bin/knex migrate${method} --client=pg --connection='${connection}' --migrations-directory=./migrations`)
 }
