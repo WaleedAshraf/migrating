@@ -10,7 +10,7 @@ It will run latest migration OR will rollback last migration.
 
 ### Install:
 ```
-npm -i -g migrating
+npm i -g migrating
 ```
 ### Usage:
 ```
