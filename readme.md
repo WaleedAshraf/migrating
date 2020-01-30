@@ -8,6 +8,9 @@ Common migrator for Sequelize | Knex ... more coming.
 
 It will run latest migration OR will rollback last migration.
 
+### Note!
+This library has no custom logic. It's just a wrapper around official Sequelize and Knex libs. Run at your own risk.
+
 ### Install:
 ```
 npm i -g migrating
